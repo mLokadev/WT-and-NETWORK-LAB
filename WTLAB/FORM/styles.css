@@ -1,0 +1,56 @@
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    height: 100vh;
+}
+.logo {
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 20px;
+
+}
+
+.logo img {
+    width: 150px; 
+    height: auto;
+}
+
+.button {
+    background-color: blue;
+    color: white; 
+    padding: 10px 20px; 
+    border:lab(from color l a b)
+    cursor: pointer; 
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(background.jpg); 
+    }
+
+    .centered-container {
+        height: auto;
+    }
+
+    .button {
+        padding: 8px 16px; 
+    }
+}
+
+
+
+
+
